@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const cls=document.querySelectorAll(".close")
     const ic=document.querySelector(".thi")
     const navi=document.querySelector(".nav")
+    const a4=document.querySelectorAll(".bn")
 
     function showlogin(){
         login.style.display="block"
@@ -27,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function (){
     function icon(){
         navi.style.display="block"
     }
+        function sinin(){
+        alert("Signed Successfully...")
+    }
+    a4.forEach(button => {
+        button.addEventListener("click",function(event){
+            event.preventDefault()
+            sinin()
+        })
+    })
 
     ic.addEventListener("click",function (event){
         event.preventDefault()
