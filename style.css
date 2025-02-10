@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: rubik,sans-serif;
+}
+body{
+    background-color: #040214;
+    color:white;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 5.5%;
+    z-index: 0;
+    background-color: #040214;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    margin-top: 0px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: 500;
+    text-shadow:0 0 3.5px white;
+    transition: all 0.5s;
+    user-select: none;
+
+    cursor: default;
+}
+.nav a:hover{
+    color:rgb(222, 17, 106);
+    text-shadow: 0 0 5px rgb(222, 17, 106);
+    font-size: larger;
+}
+.nav a:active{
+    color:rgb(248, 4, 4);
+}
+.srchbx{
+    border: solid white 2px;
+    display: flex;
+    height: 70%;
+    width: 220px;
+    border-radius: 6px;
+    box-shadow:0 0 4px white;
+    transition: all 0.1s;
+}
+.srchbx input::placeholder{
+    color:white;
+}
+.srchbx input{
+    width: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    text-shadow:0 0 3px white;
+}
+.srchbx:hover{
+    box-shadow:0 0 6px 2px rgb(222, 17, 106);
+    border: solid 2px rgb(222, 17, 106);
+}
+.srchbx button{
+    width: 20%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    text-shadow:0 0 5px white;
+    transition: all 0.3s;
+}
+.srchbx button:hover{
+    color:rgb(222, 17, 106);
+    font-weight: bolder;
+    text-shadow: 0 0 8px rgb(208, 39, 67);
+}
+.srchbx button:active{
+    color:rgb(248, 4, 4);
+}
+.section{
+    position: absolute;
+    width: 75%;
+    min-height: 550px;
+    top: 17%;
+    left: 180px;
+    border-radius: 30px;
+    background: url(/img/Screenshot\ 2025-02-01\ 223437_upscayl_4x_realesrgan-x4plus-anime.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index:-1;
+}
+.section .cont{
+    height: 100%;
+    width: 760px;
+    z-index: -1;
+}
+.dive{
+    display: none;
+}
+.frmsin{
+    opacity: 0;
+}
+.frmreg,.frmsin{
+    position: absolute;
+    height: 100%;
+    width: 380px;
+    top: 0;
+    right: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    backdrop-filter: blur(3px);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.frmreg:hover,.frmsin:hover{
+    box-shadow: 0 0 20px rgb(225, 225, 225);
+    transition: all 0.8s ease;
+}
+.frmsin h2,.frmreg h2{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    text-shadow:0 0 5px white;
+    margin-top: 34px;
+}
+.sinbx,.pass,.sinb{
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+    justify-content: center;
+}
+.pass input,.sinbx input,.sinb input{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px white;
+    color:rgb(105, 0, 26);
+    font-size: medium;
+    padding-right: 40px;
+}
+.sinbx label,.pass label,.sinb label{
+    position: absolute;
+    left:0;
+    top:5px;
+    pointer-events: none;
+}
+.forgot,.reg {
+    margin-top: 30px;
+    display: flex;
+}
+.cen{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.sinbx i,.pass i,.sinb i{
+    position: absolute;
+    top:4px;
+    right: 8px;
+    font-size: large;
+    pointer-events: none;
+}
+.cen input:focus~label,
+.cen input:valid~label{
+    top:-17px;
+    transition: all 0.5s;
+}
+.reg a,.forgot a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(222, 17, 106);
+}
+.frmreg .reg,.forgot{
+    margin-top: 20px;
+}
+.frmreg .forgot label{
+    font-size: small;
+    padding-top: 3px;
+}
+.forgot input{
+    margin-right: 8px;
+    accent-color: rgb(222, 17, 106);
+}
+.bn{
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+    font-size:15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: rgb(222, 17, 106);
+    background:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 4px;
+    height: 38px;
+    border: 1px solid rgb(222, 17, 106);
+    box-shadow: inset 0 0 5px 2px rgb(208, 39, 67);
+}
+.bn:hover{
+    color:white;
+    background-color: rgb(222, 17, 106);
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.bn:active{
+    background-color:rgb(248, 4, 45);
+}
+.reg .loglink,.reglink{
+    background: transparent;
+    outline: none;
+    border: none;
+    color:rgb(222, 17, 106);
+    font-size: medium;
+    margin-left: 68px;
+}
+.close{
+    display:flex;
+    position: absolute;
+    top:-2px;
+    right: -3px;;
+    font-size: 30px;
+    border-radius: 0 20px;
+    text-shadow: 0 0 5px white;
+    background-color: rgb(222, 17, 106);
+    padding: 8px;
+    opacity:0;
+    transition: all 0.4s;
+}
+.close:hover{
+    opacity:1;
+}
+.close:active{
+    background-color:rgb(248, 4, 4);
+}
+footer{
+    display: flex;
+    position: absolute;
+    margin-bottom:-400px;
+    bottom: 0;
+    left:0;
+    height:230px;
+    width:100%;
+    padding:30px;
+    padding-top: 20px;
+    background-color: #0d0d15;
+}
+.cpr{
+    width:100%;
+    height: 100%;
+}
+.cp{
+    display:flex;
+    margin-bottom: 20px;
+}
+.cpr p{
+    font-size: small;
+}
+.bx.bx-copyright{
+    margin-top: -3px;
+    font-size:23px;
+    margin-right: 10px;
+}
+.p1{
+    height:60px;
+}
+.soc{
+    margin-top:25px;
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+hr{
+    box-shadow:0 0 3.5px white;
+}
+.soc i{
+    font-size: 20px;
+    border:1px solid white;
+    padding:15px;
+    margin-right: 40px;
+    border-radius: 33px;
+    text-shadow:0 0 5px white;
+    box-shadow:0 0 3.5px white;
+    transition: all 0.3s;
+}
+.soc i:hover{
+    text-shadow:0 0 5px  rgb(222, 17, 106);
+    box-shadow:inset 0 0 8px rgb(222, 17, 106);
+    border: 1px solid rgb(222, 17, 106);
+    color:rgb(222, 17, 106);
+}
+.soc a:visited{
+    color:white;
+}
+.cont{
+    height:100%;
+    margin-left: 50px;
+    margin-top: 100px;
+    padding-right: 60px;
+}
+.msg{
+    font-size: xx-large;
+    margin-bottom: 180px;
+    color: rgb(255, 202, 29);
+    text-shadow: 0 0 4px rgb(255, 202, 29);
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+}
+.d1{
+    font-size:medium;
+    margin-bottom: 80px;
+    padding-right: 20px;
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+}
+.pro{
+    font-size: larger;
+    word-spacing: 5px;
+    color: rgb(255, 202, 29);
+    text-shadow: 0 0 4px rgb(255, 202, 29);
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+}
+.thi{
+    display: none;
+    transition: all 0.5s;
+}
+.thi:hover{
+        color:rgb(222, 17, 106);
+        text-shadow: 0 0 5px rgb(222, 17, 106);    
+}
+@media (max-width:885px){
+    .header{
+        height: auto;
+        background: none;
+    }
+    .nav{
+        position: absolute;
+        left:30px;
+        top: 70px;
+        display: none;
+    }
+    .nav a{
+       margin-right: 5px;
+       font-size: small; 
+       display: flex;
+       line-height: 25px;
+    }
+    .srchbx{
+        width: 40%;
+        margin-right: -5px;
+    }
+    .thi{
+        display: flex;
+        font-size: x-large;
+        text-shadow: 0 0 5px white;
+    }
+    .cont{
+        padding: 30px;
+    }
+    .section{
+        width: 70%;
+        left:110px;
+        top:100px;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .frmreg,.frmsin{
+        padding: 70px;
+        position: absolute;
+        top:600px;
+    }
+    .frmreg:hover,.frmsin:hover{
+        border: none;
+        box-shadow: none;
+    }
+    footer{
+        height:230px;
+        margin-bottom: -1000px;
+    }
+    .cpr p{
+        font-size: x-small;
+    }
+    hr{
+        margin-top: 10px;
+    }
+    .soc i{
+        padding: 13px;
+    }
+    .soc{
+        margin-left: 15px;
+    }
+    .cont{
+        padding-bottom: 20px;
+    }
+    .cont h2{
+        font-size: xx-large;
+    }
+    .cont p{
+        font-size: small;
+    }
+}
