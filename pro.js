@@ -29,25 +29,25 @@ document.addEventListener("DOMContentLoaded", function (){
     }
 
     ic.addEventListener("click",function (event){
-        event.preventDefault();
-        icon();
+        event.preventDefault()
+        icon()
     })
     signin.addEventListener("click",function(event){
-        event.preventDefault();
-        showlogin();
-    });
+        event.preventDefault()
+        showlogin()
+    })
     signup.addEventListener("click",function(event){
-        event.preventDefault();
-        showregister();
-    });
+        event.preventDefault()
+        showregister()
+    })
     log.addEventListener("click",function(event){
-        event.preventDefault();
-        mainbx();
-    });
+        event.preventDefault()
+        mainbx()
+    })
     cls.forEach(button => {
         button.addEventListener("click",function(event) {
-            event.preventDefault();
-            close();
+            event.preventDefault()
+            close()
         })
     })
-});
+})
