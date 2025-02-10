@@ -367,9 +367,12 @@ hr{
     }
     .nav a{
        margin-right: 5px;
-       font-size: small; 
+       font-size: xx-small; 
        display: flex;
        line-height: 25px;
+    }
+    .nav a:hover{
+       font-size: small;
     }
     .srchbx{
         width: 40%;
