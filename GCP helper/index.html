@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP Helper</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="main">
+            <h1 class="title">GCP HELPER</h1>
+            <p class="txt">Hello This helps as a checklist for shopping...</p>
+            <form action="#" class="infrm">
+                <input class="product"  type="text" required placeholder="Product">
+                <input class="qty" type="text"  required placeholder="Qty">
+                <button type="submit" class="add">ADD</button>
+            </form>
+        </div>
+        <div class="list_bx">
+            <ul class="lists">
+                <!--Added Elements appear here-->
+            </ul>
+        </div>
+        <div class="finalbx">
+            <ul class="flist">
+                <!--Price added Elements appear here-->
+            </ul>
+        </div>
+        <button class="reset" onclick="reset()">Reset</button>
+    </header>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+<script type="module" src="demo.js"></script>
+</html>
