@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigiGrow Agency - Colorful & Dynamic</title>
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!--Stylesheet-->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-indigo-100 to-purple-100">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold tracking-wide select-none">DigiGrow Agency</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#services" tabindex="0">Services</a>
+        <a href="#portfolio" tabindex="0">Portfolio</a>
+        <a href="#testimonials" tabindex="0">Testimonials</a>
+        <a href="#contact" tabindex="0">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-40 bg-gradient-to-r from-pink-400 via-red-400 to-yellow-400 text-white mt-20 relative overflow-hidden">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-wider drop-shadow-lg animate-text-flicker">Empowering Your Digital Presence</h2>
+    <p class="text-xl md:text-2xl mb-10 drop-shadow-md font-semibold">We create strategies that deliver real results.</p>
+    <button class="bg-white text-red-600 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition duration-300">
+      Get Started
+    </button>
+    <!-- Subtle animated background circles -->
+    <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-pink-300 rounded-full opacity-30 animate-pulse"></div>
+    <div class="absolute -top-32 -left-32 w-72 h-72 bg-yellow-300 rounded-full opacity-25 animate-pulse delay-1000"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-24 container mx-auto fade-in px-4">
+    <h3 class="section-title text-center">Our Services</h3>
+    <p class="max-w-xl mx-auto mb-12 text-center text-gray-700 font-medium text-lg">
+      Our specialized services help businesses grow their online footprint and convert more customers.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="card">
+        <h4 class="text-2xl font-semibold mb-3 text-red-500 hover:text-red-700 transition-colors cursor-pointer">SEO Optimization</h4>
+        <p class="text-gray-700 leading-relaxed">Boost your visibility on search engines and attract more traffic with proven SEO strategies customized for your brand.</p>
+      </div>
+      <div class="card">
+        <h4 class="text-2xl font-semibold mb-3 text-red-500 hover:text-red-700 transition-colors cursor-pointer">Social Media Marketing</h4>
+        <p class="text-gray-700 leading-relaxed">Engage your audience and grow your brand on social platforms through targeted campaigns and creative content.</p>
+      </div>
+      <div class="card">
+        <h4 class="text-2xl font-semibold mb-3 text-red-500 hover:text-red-700 transition-colors cursor-pointer">Content Strategy</h4>
+        <p class="text-gray-700 leading-relaxed">Deliver compelling content that drives conversions and builds lasting relationships with your audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-24 bg-white fade-in px-4">
+    <div class="container mx-auto max-w-6xl">
+      <h3 class="section-title text-center">Our Work</h3>
+      <p class="max-w-3xl mx-auto mb-10 text-center text-gray-600 font-medium">
+        Explore some of our recent projects demonstrating our expertise and creativity.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="card cursor-pointer hover:scale-105 transition-transform duration-300">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 1" class="rounded mb-4 w-full h-48 object-cover shadow-md" />
+          <h4 class="font-semibold text-lg text-red-600 mb-1">SEO Campaign for Local Brand</h4>
+          <p class="text-gray-700 text-sm">A targeted SEO campaign that increased organic traffic by 120% in 6 months.</p>
+        </div>
+        <div class="card cursor-pointer hover:scale-105 transition-transform duration-300">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 2" class="rounded mb-4 w-full h-48 object-cover shadow-md" />
+          <h4 class="font-semibold text-lg text-red-600 mb-1">Social Media Growth for Startup</h4>
+          <p class="text-gray-700 text-sm">Built brand awareness and tripled engagement in under 4 months.</p>
+        </div>
+        <div class="card cursor-pointer hover:scale-105 transition-transform duration-300">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Project 3" class="rounded mb-4 w-full h-48 object-cover shadow-md" />
+          <h4 class="font-semibold text-lg text-red-600 mb-1">Content Strategy for NGO</h4>
+          <p class="text-gray-700 text-sm">Crafted a global content strategy that increased donor engagement significantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-24 bg-gradient-to-r from-pink-50 to-yellow-50 fade-in px-4">
+    <div class="container mx-auto max-w-5xl">
+      <h3 class="section-title text-center">What Clients Say</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="card italic text-gray-700 shadow-lg">
+          <p class="mb-4">"DigiGrow transformed our digital footprint. Highly recommended!"</p>
+          <p class="font-semibold text-red-600">- Priya S., CEO</p>
+        </div>
+        <div class="card italic text-gray-700 shadow-lg">
+          <p class="mb-4">"Their creative team helped us triple engagement in just 3 months."</p>
+          <p class="font-semibold text-red-600">- Alex M., Marketing Director</p>
+        </div>
+        <div class="card italic text-gray-700 shadow-lg">
+          <p class="mb-4">"Excellent service and incredible results. Our revenue increased by 50% thanks to DigiGrow."</p>
+          <p class="font-semibold text-red-600">- Natasha K., Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 fade-in px-4">
+    <div class="container mx-auto max-w-3xl bg-white rounded-xl shadow-lg p-10">
+      <h3 class="section-title text-center mb-10">Contact Us</h3>
+      <form id="contactForm" class="text-center space-y-6" novalidate>
+        <input type="text" name="name" placeholder="Your Name" class="w-80" /><br>
+        <input type="email" name="email" placeholder="Your Email" class="w-80"/><br>
+        <textarea name="message" rows="5" placeholder="Your Message" class="w-80"></textarea>
+        <button type="submit" class="bg-red-500 text-white font-bold w-full py-3 rounded hover:bg-red-600 transition-colors">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center">
+    <p class="font-semibold mb-4">&copy; 2025 DigiGrow Agency. All rights reserved.</p>
+    <div class="space-x-6">
+      <a href="#" class="text-red-600 hover:text-red-800 transition-colors font-medium">Privacy Policy</a>
+      <a href="#" class="text-red-600 hover:text-red-800 transition-colors font-medium">Terms of Service</a>
+    </div>
+  </footer>
+
+  <script src="demo.js"></script>
+</body>
+</html>
