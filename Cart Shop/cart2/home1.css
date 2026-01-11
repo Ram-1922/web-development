@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+.logo img{
+    margin-left: -55px;
+    height: 200px;
+    width: 220px;
+    user-select: none;
+}
+.top{
+    position: relative;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    padding: 5px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    padding: 35px;
+    color: #1f76b4;
+    font-size:large;
+    font-weight: 450;
+    transition: all .42s ease;
+    user-select: none;
+}
+.nav a:hover{
+    color:#bdbdbd;
+    font-size: 22px;
+}
+.nav .active{
+    color:#29AB87;
+    font-size: 20px;
+}
+.navicon a{
+    padding: 10px;
+    color:#1f76b4;
+    font-size: large;
+    transition: all.42s ease;
+}
+.navicon a:hover{
+    color: #29AB87;
+    font-weight: 300;
+    font-size: 27px;
+}
+.bx.bx-menu{
+    padding-left:15px;
+    font-size: large;
+    font-weight: 400;
+    color: #1f76b4;
+    transition: all.42s ease;
+    user-select: none;
+}
+.bx.bx-menu:hover{
+    font-size: 27px;
+    color:#29AB87;
+}
+#menu{
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+}
+.mhome{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/man-flying-holding-shopping-cart-260nw-2061872129_upscayl_7x_realesrgan-x4plus-anime.png);
+    display: flex;
+    background-position:top;
+    background-size:contain;
+    background-repeat: no-repeat;
+    animation-name: sw;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+@keyframes sw{
+    50%{background-position: right;}
+}
+
+.center {
+    position: relative;
+    background: transparent;
+    border: 2px solid rgb(149, 149, 149);
+    text-align: center;
+    border-radius: 5px;
+    width:400px;
+    height: 400px;
+    padding: 30px;
+    margin-left: 34%;
+    margin-top: -6%;
+    backdrop-filter: blur(7px);
+    justify-content: center;
+    box-shadow:0 0 30px  rgb(196, 196, 196);
+    align-items: center;
+}
+.center h1{
+    padding-bottom: 10px;
+    color:#238b6d;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: center;
+    background: transparent;
+}
+.center form{
+    width:100%;
+    padding:30px;
+    background: transparent;
+}
+.center .txt{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-bottom: 2px solid #29AB87;
+    margin: 20px 0;
+}
+.rem ,.txt label,.rem label,.forgot,.forgot a,.btn{
+    background: transparent;
+}
+.txt .i2:focus~label,
+.txt .i2:valid~label {
+    top: 190px;
+}
+.txt .i1:focus~label,
+.txt .i1:valid~label {
+    top: 128px;
+}
+.txt{
+    margin-bottom: 100px;
+}
+.txt label{
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 400;
+    color:#18486b;
+    display: flex;
+    left:66px;
+    padding-bottom: 20px;
+    transition:.5s;
+    pointer-events: none;
+}
+.txt input{
+    width:100%;
+    height:40px;
+    background: transparent;
+    border: none;
+    outline:none;
+    padding:0px 35px 0px 5px;
+}
+.txt span{
+    position: absolute;
+    right:55px;
+    font-size:x-large;
+    line-height: 4px;
+    color: #1f76b4;
+}
+.center .rem label{
+    margin-left: 10px;
+    color:#18486b;
+}
+.center .rem input{
+    accent-color:#29AB87;
+}
+.forgot {
+    margin-top: 10px;
+}
+.forgot a{
+    color: #1e725a;
+}
+.btn{
+    border:none;
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 8px;
+    padding:10px;
+    width:100px;
+    color: white;
+    background-color: #29AB87;
+    transition: all.42s ease;
+}
+.btn:hover{
+    background-color:transparent;
+    color:#34b590;
+    border:2px solid #238b6d;
+}
+.cls i{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    font-size: 2em;
+    text-align: center;
+    background-color: #238b6d;
+    color:#ffffff;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    text-align: center;
+    transition: all.5s ease;
+}
+.cls i:hover{
+    color:#18486b;
+    background-color: #ffffff;
+}
+.center a{
+    background: transparent;
+}
+.sebx{
+    display: flex;
+    position: absolute;
+    right: 205px;
+    border: 1px solid #29AB87;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.42s ease;
+}
+.sebx input{
+    border: none;
+    font-size: 0.77em;
+    outline: none;
+}
+.sebx:hover{
+    opacity: 100;
+}

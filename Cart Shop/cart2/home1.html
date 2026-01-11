@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="C-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cart & Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<!-- or -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="home1.css">
+</head>
+<body>
+    <header class="top">
+        <a href="#" class="logo"><img src="/img/logo2.jpeg"></a>
+        <ul class="nav">
+            <a href="home.html" >Home</a>
+            <a href="#">Shop</a>
+            <a href="products.html">Products</a>
+            <a href="home1.html"class="active">Login</a>
+            <a href="#">About</a>
+        </ul>
+        <div class="navicon">
+            <div class="sebx"><form action="post">
+                <input type="text" placeholder="search" maxlength="15">
+            </form></div>
+            <a href="#"><i class='bx bx-search' ></i></a>
+            <a href="#"><i class='bx bx-user' ></i></a>
+            <a href="#"><i class='bx bx-cart' ></i></a>
+            <div class='bx bx-menu' id="menu"></div>
+        </div>
+    </header>
+        <section class="mhome">
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt"><span class="ic"><i class='bx bxs-user-circle' ></i>
+                </span>
+                    <input class="i1" type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="txt"><span class="ic"><i class='bx bxs-lock'></i></span>
+                    <input class="i2"type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="cls"><a href="home.html"><span><i class='bx bx-x' ></i></span></a></div>
+                <div class="rem"><input type="checkbox"><label>Remember Me</label></div>
+                <div class="forgot"><a href="#">Forgot Password?</a></div>
+                <a href="products.html"><button class="btn" type="submit">Login</button></a>
+            </form>
+        </div>
+        </section>
+</body>
+</html>
